@@ -14,15 +14,15 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, }
 
 import "./App.css";
 
-const router = createBrowserRouter(createRoutesFromElements(
+const router = createBrowserRouter( createRoutesFromElements (
   <Route path="/" element={<Root />}>
-    {/* Add Routes here! */}
+    <Route path="about" element={<About />} />
   </Route>))
 
 function App () {
   return (
-    <RouterProvider router={ router } />
-  );
+    <RouterProvider router={router} />
+    );
 }
 
 export default App;
