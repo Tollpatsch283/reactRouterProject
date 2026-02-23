@@ -20,12 +20,10 @@ const router =
     {/* Add Routes here! */}
   </Route>
 
-function App() {
+export default function App () {
   return (
-    <>
-      <RouterProvider router={router}>
-    </>
-      );
+    <RouterProvider router={ router } />
+  );
 }
 
       export default App;
