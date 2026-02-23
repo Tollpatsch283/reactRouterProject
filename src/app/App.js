@@ -14,11 +14,10 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, }
 
 import "./App.css";
 
-const router =
-  /* Wrap this Root Route to create Router here */
+const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Root />}>
     {/* Add Routes here! */}
-  </Route>
+  </Route>))
 
 function App () {
   return (
